@@ -12,7 +12,7 @@ public class BuddyStrings {
         if (s.equals(goal)) {
             Set<Character> set = new HashSet<>(s.chars().mapToObj(i -> (char) i).toList());
             if (s.length() != set.size()) {
-                return false;
+                return true;
             }
         }
 
